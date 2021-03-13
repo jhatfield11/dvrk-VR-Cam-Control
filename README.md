@@ -3,9 +3,7 @@ This repository has code to allow control of a DaVinci research kit in simulatio
 
 Running the repository is not dependent on a VR rig but may produce errors. To run the repository knowledge of Unity and ROS will be required. 
 
-# Structure of the Project 
-
-##  Unordered List
+##  Structure of the Project 
 * Unity-dvrk-VR
   * A unity project that contains scripts, URDF's scenes and prefabs to generate the PSM's ,MTM's and ECM manipulators in Unity and input from a VR rig
   * The virtual robots can be controlled by grabbing the robots in VR or attatching an end effector to the movement of a VR controller. 
