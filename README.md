@@ -11,3 +11,6 @@ Running the repository is not dependent on a VR rig but may produce errors. To r
   * The virtual robots can be controlled by grabbing the robots in VR or attatching an end effector to the movement of a VR controller. 
   * Message generation and ROS communication are handled by the ROS-TCP-Connector. Two scripts are available publish and subscribe to JointState messages passed over the connector.
 * ROS-dvrk-VR
+  * A set of python scripts to connect with the unity environment, publish to the dvrk manipulators and perform autonomous camera control.
+  * JSON files to run the console application with two patient side manipulators and the endoscope camera manipulator. 
+  * ROS communication is handled by a TCP server from ROS-TCP-Connector. 
