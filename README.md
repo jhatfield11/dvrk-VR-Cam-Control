@@ -12,3 +12,8 @@ Running the repository is not dependent on a VR rig but may produce errors. To r
   * A set of python scripts to connect with the unity environment, publish to the dvrk manipulators and perform autonomous camera control.
   * JSON files to run the console application with two patient side manipulators and the endoscope camera manipulator. 
   * ROS communication is handled by a TCP server from ROS-TCP-Connector. 
+## Dependencies 
+* https://github.com/Unity-Technologies/Unity-Robotics-Hub.git contains components for URDF importer, TCP connector and TCP endpoint 
+* https://github.com/jhu-dvrk/sawIntuitiveResearchKit.git
+* https://github.com/jhu-dvrk/dvrk-ros.git
+* A VR rig however the system can be ran without a VR rig.
