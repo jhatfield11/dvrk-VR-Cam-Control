@@ -1,11 +1,11 @@
 <?xml version="1.0"?>
 <package format="2">
-  <name>dvrk_connector</name>
+  <name>ROS-dvrk-VR</name>
   <version>0.0.0</version>
-  <description>The niryo_moveit package</description>
+  <description>Camera Control and VR control package</description>
 
 
-  <maintainer email="unity-robotics@unity3d.com">Unity Robotics</maintainer>
+  <maintainer email="jhatfield3@sheffield.ac.uk">James Hatfield</maintainer>
 
   <license>Apache 2.0</license>
 
