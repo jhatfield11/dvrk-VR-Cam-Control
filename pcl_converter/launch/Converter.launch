@@ -1,0 +1,4 @@
+<launch>
+    <node name="pcl_converter_node" pkg="pcl_converter" type="xyztopcl" output="screen" respawn="true" />
+    
+</launch> 
