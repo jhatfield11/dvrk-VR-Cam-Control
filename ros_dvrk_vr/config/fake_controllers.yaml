@@ -1,0 +1,33 @@
+controller_list:
+  - name: fake_ECM_Group_controller
+    type: $(arg execution_type)
+    joints:
+      - ECM_outer_yaw
+      - ECM_outer_pitch
+      - ECM_insertion
+      - ECM_outer_roll
+  - name: fake_PSM1_Group_controller
+    type: $(arg execution_type)
+    joints:
+      - PSM1_outer_yaw
+      - PSM1_outer_pitch
+      - PSM1_outer_insertion
+      - PSM1_outer_roll
+      - PSM1_outer_wrist_pitch
+      - PSM1_outer_wrist_yaw
+  - name: fake_PSM2_Group_controller
+    type: $(arg execution_type)
+    joints:
+      - PSM2_outer_yaw
+      - PSM2_outer_pitch
+      - PSM2_outer_insertion
+      - PSM2_outer_roll
+      - PSM2_outer_wrist_pitch
+      - PSM2_outer_wrist_yaw
+initial:  # Define initial robot poses.
+  - group: ECM_Group
+    pose: Home
+  - group: PSM1_Group
+    pose: PSM1_Home
+  - group: PSM2_Group
+    pose: PSM2_Home

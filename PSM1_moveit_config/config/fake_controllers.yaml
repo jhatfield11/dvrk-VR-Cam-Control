@@ -1,0 +1,19 @@
+controller_list:
+  - name: fake_PSM1_Group_controller
+    type: $(arg execution_type)
+    joints:
+      - PSM1_outer_yaw
+      - PSM1_outer_pitch
+      - PSM1_outer_insertion
+      - PSM1_outer_roll
+      - PSM1_outer_wrist_pitch
+      - PSM1_outer_wrist_yaw
+  - name: fake_End_effector_controller
+    type: $(arg execution_type)
+    joints:
+      - PSM1_jaw
+initial:  # Define initial robot poses.
+#  - group: PSM1_Group
+#    pose: home
+
+  []

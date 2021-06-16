@@ -1,0 +1,12 @@
+
+<launch>
+    <include file="$(find PSM1_moveit_config)/launch/dvrk_psm1.launch"/>  
+    <include file="$(find PSM1_moveit_config)/launch/psm1_trajectory_execution.launch">
+       <arg name="sim" value="true"/>
+    </include>
+
+
+    <include file="$(find PSM1_moveit_config)/launch/moveit_rviz.launch">
+       <arg name="config" value="true"/>
+    </include>
+</launch>

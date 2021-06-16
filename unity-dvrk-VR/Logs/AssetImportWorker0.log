@@ -1,0 +1,202 @@
+Using pre-set license
+Built from '2020.2/staging' branch; Version is '2020.2.0b14 (dc0b50340a64) revision 14420816'; Using compiler version '192528614'; Build Type 'Release'
+OS: 'Windows 10  (10.0.0) 64bit' Language: 'en' Physical Memory: 32600 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
+
+ COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\2020.2.0b14\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker0
+-projectPath
+C:/Users/chokj/Documents/GitHub/dvrk-VR-Cam-Control/unity-dvrk-VR
+-logFile
+Logs/AssetImportWorker0.log
+-srvPort
+62029
+Successfully changed project path to: C:/Users/chokj/Documents/GitHub/dvrk-VR-Cam-Control/unity-dvrk-VR
+C:/Users/chokj/Documents/GitHub/dvrk-VR-Cam-Control/unity-dvrk-VR
+Using Asset Import Pipeline V2.
+Refreshing native plugins compatible for Editor in 77.75 ms, found 7 plugins.
+Preloading 1 native plugins for Editor in 1.12 ms.
+Initialize engine version: 2020.2.0b14 (dc0b50340a64)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2020.2.0b14/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/chokj/Documents/GitHub/dvrk-VR-Cam-Control/unity-dvrk-VR/Assets
+GfxDevice: creating device client; threaded=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce RTX 2070 Super (ID=0x1e91)
+    Vendor:   
+    VRAM:     8011 MB
+    Driver:   27.21.14.6172
+Shader 'Oculus/OVRMRCameraFrameLit': fallback shader 'Alpha-Diffuse' not found
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2020.2.0b14/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2020.2.0b14/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2020.2.0b14/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56516
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.2.0b14/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.002418 seconds.
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 66.54 ms, found 7 plugins.
+Preloading 1 native plugins for Editor in 0.08 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.194 seconds
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.010195 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 72.95 ms, found 7 plugins.
+Preloading 1 native plugins for Editor in 0.13 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+[XR] OculusXRPlugin: registering subsystems
+[XR] Unable to register display lifecyle provider: [1]
+[XR] Oculus Input lifecycle provider registered.
+[XR] Unable to register input lifecyle provider: [1]
+[XR] OVRP version 1.52.1
+Mono: successfully reloaded assembly
+- Completed reload, in  1.102 seconds
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Shader 'Oculus/OVRMRCameraFrameLit': fallback shader 'Alpha-Diffuse' not found
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.07 seconds
+Refreshing native plugins compatible for Editor in 0.97 ms, found 7 plugins.
+Preloading 1 native plugins for Editor in 0.07 ms.
+Unloading 2371 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 108.5 MB.
+System memory in use after: 108.7 MB.
+
+Unloading 56 unused Assets to reduce memory usage. Loaded Objects now: 2823.
+Total: 4.840500 ms (FindLiveObjects: 0.709500 ms CreateObjectMapping: 0.375600 ms MarkObjects: 3.587300 ms  DeleteObjects: 0.166200 ms)
+
+========================================================================
+Received Import Request.
+  path: Assets/dvrk/Meshes/mtm/BottomArm_0.asset
+  artifactKey: Guid(0b80f3e1490befc45be7a51df4073e5a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/dvrk/Meshes/mtm/BottomArm_0.asset using Guid(0b80f3e1490befc45be7a51df4073e5a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3ef9987eae8cf1b82bea8dbfe9e161b3') in 0.111611 seconds
+  Import took 0.116174 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000323 seconds.
+  path: Assets/dvrk/Meshes/mtm/ArmParallel_0.asset
+  artifactKey: Guid(0ac7e6a10bd0b0844a84f6944a1fdcc5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/dvrk/Meshes/mtm/ArmParallel_0.asset using Guid(0ac7e6a10bd0b0844a84f6944a1fdcc5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0e9892f15a0ce85f0e5c77dc56fa4148') in 0.013109 seconds
+  Import took 0.017418 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000418 seconds.
+  path: Assets/dvrk/Meshes/mtm/ArmParallel1_0.asset
+  artifactKey: Guid(ceb6ae8bebc049844bdc969a4c095d71) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/dvrk/Meshes/mtm/ArmParallel1_0.asset using Guid(ceb6ae8bebc049844bdc969a4c095d71) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd6ed8e03b11f1627700381763d2871ce') in 0.015459 seconds
+  Import took 0.021903 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 97.999014 seconds.
+  path: Assets/dvrk/Meshes/psm/tool_wrist_caudier_link_2_0.asset
+  artifactKey: Guid(4626120c198945948af155120a35007d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/dvrk/Meshes/psm/tool_wrist_caudier_link_2_0.asset using Guid(4626120c198945948af155120a35007d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f79ba5fe328bbd15b1748ac0feb61b1d') in 0.018999 seconds
+  Import took 0.028274 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000665 seconds.
+  path: Assets/dvrk/Meshes/psm/tool_wrist_caudier_link_1_shaft_0.asset
+  artifactKey: Guid(234ee069e5460a44ab7f764b8568c5cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/dvrk/Meshes/psm/tool_wrist_caudier_link_1_shaft_0.asset using Guid(234ee069e5460a44ab7f764b8568c5cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3e148095c002a0dfc1f981b013e73801') in 0.013059 seconds
+  Import took 0.019666 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.286868 seconds.
+  path: Assets/dvrk/Meshes/psm/tool_wrist_caudier_link_1_0.asset
+  artifactKey: Guid(706713c1b38ac3d4cb095fcb5ac4374f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/dvrk/Meshes/psm/tool_wrist_caudier_link_1_0.asset using Guid(706713c1b38ac3d4cb095fcb5ac4374f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5335dd7d295da3f42df832aa02d77cb5') in 0.019808 seconds
+  Import took 0.025248 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.001263 seconds.
+  path: Assets/dvrk/Meshes/psm/tool_wrist_caudier_link_1_0.asset
+  artifactKey: Guid(706713c1b38ac3d4cb095fcb5ac4374f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/dvrk/Meshes/psm/tool_wrist_caudier_link_1_0.asset using Guid(706713c1b38ac3d4cb095fcb5ac4374f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5335dd7d295da3f42df832aa02d77cb5') in 0.016409 seconds
+  Import took 0.022495 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.605348 seconds.
+  path: Assets/dvrk/Meshes/mtm/OutPitch_Shoulder_0.asset
+  artifactKey: Guid(0b3d63d30c7dd644dbd5f9f4a92cb28a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/dvrk/Meshes/mtm/OutPitch_Shoulder_0.asset using Guid(0b3d63d30c7dd644dbd5f9f4a92cb28a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a4cb7311f307c7d37048335fe13c78ad') in 0.011198 seconds
+  Import took 0.016210 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.954131 seconds.
+  path: Assets/dvrk/Meshes/ecm/EndoScope_0.asset
+  artifactKey: Guid(edfeb44af4e7fd64a9962bf0a7919bff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/dvrk/Meshes/ecm/EndoScope_0.asset using Guid(edfeb44af4e7fd64a9962bf0a7919bff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e913c63474cf247e8ed783a08af46da2') in 0.015791 seconds
+  Import took 0.023285 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.063987 seconds.
+  path: Assets/dvrk/Meshes/ecm/ecm_base_link_0.asset
+  artifactKey: Guid(765d99cebd4b87844b4d2664e4ff9052) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/dvrk/Meshes/ecm/ecm_base_link_0.asset using Guid(765d99cebd4b87844b4d2664e4ff9052) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8186df1a771753f2b0843d4826c26cae') in 0.025045 seconds
+  Import took 0.030698 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000327 seconds.
+  path: Assets/dvrk/Meshes/ecm/ecm_insertion_link_0.asset
+  artifactKey: Guid(201bcf14e1f26784b8cfc72a9013dc26) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/dvrk/Meshes/ecm/ecm_insertion_link_0.asset using Guid(201bcf14e1f26784b8cfc72a9013dc26) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd0a0ea8733bf8c512530923433c25ce8') in 0.021116 seconds
+  Import took 0.027831 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 613.176087 seconds.
+  path: Assets/Oculus/SampleFramework/Core/Locomotion/Materials/MeterGrid.png
+  artifactKey: Guid(94201fda3ed62c94fbb0e4bf717756ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Oculus/SampleFramework/Core/Locomotion/Materials/MeterGrid.png using Guid(94201fda3ed62c94fbb0e4bf717756ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'df7782457514c4cb669db21966157fa6') in 0.082364 seconds
+  Import took 0.088596 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.009049 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 2.75 ms, found 7 plugins.
+Preloading 1 native plugins for Editor in 0.46 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.341 seconds
+Platform modules already initialized, skipping
+Shader 'Oculus/OVRMRCameraFrameLit': fallback shader 'Alpha-Diffuse' not found
+Refreshing native plugins compatible for Editor in 1.71 ms, found 7 plugins.
+Preloading 1 native plugins for Editor in 0.15 ms.
+Unloading 2309 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 108.1 MB.
+System memory in use after: 108.3 MB.
+
+Unloading 50 unused Assets to reduce memory usage. Loaded Objects now: 2837.
+Total: 9.175600 ms (FindLiveObjects: 0.838400 ms CreateObjectMapping: 0.782000 ms MarkObjects: 7.417800 ms  DeleteObjects: 0.129200 ms)
+
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file

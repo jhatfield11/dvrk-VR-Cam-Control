@@ -1,0 +1,11 @@
+controller_list:
+  - name: ""
+    action_ns: follow_joint_trajectory
+    type: FollowJointTrajectory
+    joints:
+      - PSM1_outer_yaw
+      - PSM1_outer_pitch
+      - PSM1_outer_insertion
+      - PSM1_outer_roll
+      - PSM1_outer_wrist_pitch
+      - PSM1_outer_wrist_yaw
