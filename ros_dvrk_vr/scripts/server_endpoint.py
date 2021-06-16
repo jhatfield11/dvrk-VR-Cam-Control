@@ -26,8 +26,8 @@ def main():
         "/unity/PSM2/base_frame/": RosPublisher('/unity/PSM2/base_frame_output/', Pose, queue_size=10),
         
 
-        '/unity/Left_Controller/pose/': RosPublisher('/dvrk/PSM1/set_position_goal_cartesian', Pose, queue_size=10),
-        '/unity/Right_Controller/pose/': RosPublisher('/dvrk/PSM2/set_position_goal_cartesian', Pose, queue_size=10),
+        '/unity/Left_Controller/pose/': RosPublisher('/unity/PSM1/set_pose', Pose, queue_size=10),
+        '/unity/Right_Controller/pose/': RosPublisher('/unity/PSM2/set_pose', Pose, queue_size=10),
 
         '/unity/XYZCloud': RosPublisher('/unity/XYZCloud', XYZcloud, queue_size = 10),
 
