@@ -1,0 +1,4 @@
+PSM1_Group:
+  kinematics_solver: PSM1_PSM1_Group/IKFastKinematicsPlugin
+  kinematics_solver_search_resolution: 0.005
+  kinematics_solver_timeout: 0.005

@@ -1,0 +1,25 @@
+<launch> 
+  <!--node name="servo_server" pkg="moveit_servo" type="pose_tracking_example" output="screen" > -->
+  <node name="servo_server" pkg="ros_dvrk_vr" type="pose_tracking_arms" output="screen" > 
+    <!--param name="parameter_ns" type="string" value="PSM1_servo_server" /> -->
+    <rosparam command="load" file="$(find ros_dvrk_vr)/config/psm1_simulated_config.yaml" />
+    <rosparam command="load" file="$(find ros_dvrk_vr)/config/pose_tracking_settings.yaml" />
+    <param name="Arm" type="string" value="PSM1" />
+  </node>
+
+  <!--node name="PSM2_servo_server" pkg="ros_dvrk_vr" type="pose_tracking_arms" output="screen" > 
+    <param name="parameter_ns" type="string" value="PSM2_servo_server" /> 
+    <rosparam command="load" file="$(find ros_dvrk_vr)/config/psm2_simulated_config.yaml" />
+    <rosparam command="load" file="$(find ros_dvrk_vr)/config/pose_tracking_settings.yaml" />
+    <param name="Arm" type="string" value="PSM2" />
+  </node>-->
+
+
+    <!--
+    <node name="ECM_servo_server" pkg="ros_dvrk_vr" type="pose_tracking_arms" output="screen" > 
+    <<param name="parameter_ns" type="string" value="servo_server" />
+    <rosparam command="load" file="$(find ros_dvrk_vr)/config/ecm_simulated_config.yaml" />
+    <rosparam command="load" file="$(find ros_dvrk_vr)/config/pose_tracking_settings.yaml" />
+    <param name="Arm" type="string" value="ECM" />
+  </node>-->
+</launch>

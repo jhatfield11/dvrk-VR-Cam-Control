@@ -1,0 +1,23 @@
+controller_list:
+  - name: "ecm_arm_controller"
+    action_ns: follow_joint_trajectory
+    type: FollowJointTrajectory
+    joints:
+      - ECM_outer_yaw
+      - ECM_outer_pitch
+      - ECM_insertion
+      - ECM_outer_roll
+  - name: "psm1_arm_controller"
+    action_ns: follow_joint_trajectory
+    type: FollowJointTrajectory
+    joints:
+    - PSM1_outer_yaw
+    - PSM1_outer_pitch
+    - PSM1_outer_insertion
+  - name: "psm2_arm_controller"
+    action_ns: follow_joint_trajectory
+    type: FollowJointTrajectory
+    joints:
+    - PSM2_outer_yaw
+    - PSM2_outer_pitch
+    - PSM2_outer_insertion

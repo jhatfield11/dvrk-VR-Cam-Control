@@ -4,8 +4,10 @@
 """
 import rospy
 import dvrk 
+import yaml
 import tf_conversions
 import tf2_ros
+import tf
 import geometry_msgs.msg
 
 from geometry_msgs.msg import Pose
@@ -24,6 +26,16 @@ def callback(data, arm):
 
     t.transform.translation = data.position
     t.transform.rotation = data.orientation
+
+    quaternion = (data.orientation.x, data.orientation.y, data.orientation.z, data.orientation.w)
+    euler = tf.transformations.euler_from_quaternion(quaternion)
+    roll = euler[0]
+    pitch = euler[1]
+    yaw = euler[2]
+
+    #rospy.set_param("%s_xyz" % arm, "%d %d %d" % (data.position.x, data.position.x, data.position.x))
+    #rospy.set_param("%s_xyz" % arm, "%d %d %d" % (roll, pitch, yaw))
+    
 
     br.sendTransform(t)
 

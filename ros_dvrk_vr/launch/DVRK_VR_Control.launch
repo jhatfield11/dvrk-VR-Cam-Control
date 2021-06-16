@@ -1,15 +1,7 @@
 <launch>
     <rosparam file="$(find ros_dvrk_vr)/config/params.yaml" command="load"/>
     <node name="server_endpoint" pkg="ros_dvrk_vr" type="server_endpoint.py" args="--wait" output="screen" respawn="true" />
-    
-    <node name="arm_base_broadcaster1" pkg="ros_dvrk_vr" type="Base_subscriber.py" respawn="true" output="screen" >
-      <param name="arm" type="string" value="ECM" />
-    </node>
-    <node name="arm_base_broadcaster2" pkg="ros_dvrk_vr" type="Base_subscriber.py" respawn="true" output="screen" >
-      <param name="arm" type="string" value="PSM1" />
-    </node>
-    <node name="arm_base_broadcaster3" pkg="ros_dvrk_vr" type="Base_subscriber.py" respawn="true" output="screen" >
-      <param name="arm" type="string" value="PSM2" />
-    </node>
+
+    <include file="$(find pcl_converter)/launch/Converter.launch"/>
 
 </launch>

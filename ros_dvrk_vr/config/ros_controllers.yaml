@@ -1,0 +1,225 @@
+# Simulation settings for using moveit_sim_controllers
+moveit_sim_hw_interface:
+  joint_model_group: ECM_Group
+  joint_model_group_pose: Home
+# Settings for ros_control_boilerplate control loop
+generic_hw_control_loop:
+  loop_hz: 300
+  cycle_time_error_threshold: 0.01
+# Settings for ros_control hardware interface
+hardware_interface:
+  joints:
+    - ECM_outer_yaw
+    - ECM_outer_pitch
+    - ECM_insertion
+    - ECM_outer_roll
+    - PSM1_outer_yaw
+    - PSM1_outer_pitch
+    - PSM1_outer_insertion
+    - PSM1_outer_roll
+    - PSM1_outer_wrist_pitch
+    - PSM1_outer_wrist_yaw
+    - PSM1_jaw
+    - PSM2_outer_yaw
+    - PSM2_outer_pitch
+    - PSM2_outer_insertion
+    - PSM2_outer_roll
+    - PSM2_outer_wrist_pitch
+    - PSM2_outer_wrist_yaw
+    - PSM2_jaw
+  sim_control_mode: 1  # 0: position, 1: velocity
+# Publish all joint states
+# Creates the /joint_states topic necessary in ROS
+joint_state_controller:
+  type: joint_state_controller/JointStateController
+  publish_rate: 50
+controller_list:
+  []
+ecm_group_controller:
+  type: effort_controllers/JointVelocityController
+  joints:
+    - ECM_outer_yaw
+    - ECM_outer_pitch
+    - ECM_insertion
+    - ECM_outer_roll
+  gains:
+    ECM_outer_yaw:
+      p: 100
+      d: 1
+      i: 1
+      i_clamp: 1
+    ECM_outer_pitch:
+      p: 100
+      d: 1
+      i: 1
+      i_clamp: 1
+    ECM_insertion:
+      p: 100
+      d: 1
+      i: 1
+      i_clamp: 1
+    ECM_outer_roll:
+      p: 100
+      d: 1
+      i: 1
+      i_clamp: 1
+psm1_group_controller:
+  type: effort_controllers/JointVelocityController
+  joints:
+    - PSM1_outer_yaw
+    - PSM1_outer_pitch
+    - PSM1_outer_insertion
+    - PSM1_outer_roll
+    - PSM1_outer_wrist_pitch
+    - PSM1_outer_wrist_yaw
+  gains:
+    PSM1_outer_yaw:
+      p: 100
+      d: 1
+      i: 1
+      i_clamp: 1
+    PSM1_outer_pitch:
+      p: 100
+      d: 1
+      i: 1
+      i_clamp: 1
+    PSM1_outer_insertion:
+      p: 100
+      d: 1
+      i: 1
+      i_clamp: 1
+    PSM1_outer_roll:
+      p: 100
+      d: 1
+      i: 1
+      i_clamp: 1
+    PSM1_outer_wrist_pitch:
+      p: 100
+      d: 1
+      i: 1
+      i_clamp: 1
+    PSM1_outer_wrist_yaw:
+      p: 100
+      d: 1
+      i: 1
+      i_clamp: 1
+psm2_group_controller:
+  type: effort_controllers/JointVelocityController
+  joints:
+    - PSM2_outer_yaw
+    - PSM2_outer_pitch
+    - PSM2_outer_insertion
+    - PSM2_outer_roll
+    - PSM2_outer_wrist_pitch
+    - PSM2_outer_wrist_yaw
+  gains:
+    PSM2_outer_yaw:
+      p: 100
+      d: 1
+      i: 1
+      i_clamp: 1
+    PSM2_outer_pitch:
+      p: 100
+      d: 1
+      i: 1
+      i_clamp: 1
+    PSM2_outer_insertion:
+      p: 100
+      d: 1
+      i: 1
+      i_clamp: 1
+    PSM2_outer_roll:
+      p: 100
+      d: 1
+      i: 1
+      i_clamp: 1
+    PSM2_outer_wrist_pitch:
+      p: 100
+      d: 1
+      i: 1
+      i_clamp: 1
+    PSM2_outer_wrist_yaw:
+      p: 100
+      d: 1
+      i: 1
+      i_clamp: 1
+psm1_position_controller:
+  type: effort_controllers/JointPositionController
+  joints:
+    - PSM1_outer_yaw
+    - PSM1_outer_pitch
+    - PSM1_outer_insertion
+    - PSM1_outer_roll
+    - PSM1_outer_wrist_pitch
+    - PSM1_outer_wrist_yaw
+  gains:
+    PSM1_outer_yaw:
+      p: 100
+      d: 1
+      i: 1
+      i_clamp: 1
+    PSM1_outer_pitch:
+      p: 100
+      d: 1
+      i: 1
+      i_clamp: 1
+    PSM1_outer_insertion:
+      p: 100
+      d: 1
+      i: 1
+      i_clamp: 1
+    PSM1_outer_roll:
+      p: 100
+      d: 1
+      i: 1
+      i_clamp: 1
+    PSM1_outer_wrist_pitch:
+      p: 100
+      d: 1
+      i: 1
+      i_clamp: 1
+    PSM1_outer_wrist_yaw:
+      p: 100
+      d: 1
+      i: 1
+      i_clamp: 1
+psm2_position_controller:
+  type: effort_controllers/JointPositionController
+  joints:
+    - PSM2_outer_yaw
+    - PSM2_outer_pitch
+    - PSM2_outer_insertion
+    - PSM2_outer_roll
+    - PSM2_outer_wrist_pitch
+    - PSM2_outer_wrist_yaw
+  gains:
+    PSM2_outer_yaw:
+      p: 100
+      d: 1
+      i: 1
+      i_clamp: 1
+    PSM2_outer_pitch:
+      p: 100
+      d: 1
+      i: 1
+      i_clamp: 1
+    PSM2_outer_insertion:
+      p: 100
+      d: 1
+      i: 1
+      i_clamp: 1
+    PSM2_outer_roll:
+      p: 100
+      d: 1
+      i: 1
+      i_clamp: 1
+    PSM2_outer_wrist_pitch:
+      p: 100
+      d: 1
+      i: 1
+      i_clamp: 1
+    PSM2_outer_wrist_yaw:
+      p: 100
+      d: 1
+      i: 1
+      i_clamp: 1

@@ -1,0 +1,98 @@
+psm1_arm_controller:
+  type: position_controllers/JointTrajectoryController
+  joints:
+    - PSM1_outer_yaw
+    - PSM1_outer_pitch
+    - PSM1_outer_insertion
+  gains: 
+    PSM1_outer_yaw: {p: 100.0, i: 0.0, d: 3.0}
+    PSM1_outer_pitch: {p: 100.0, i: 0.0, d: 3.0}
+    PSM1_outer_insertion: {p: 6000.0, i: 0.0, d: 80.0}
+  constraints:
+    goal_time: 0.6
+    stopped_velocity_tolerance: 0.05
+    PSM1_outer_yaw: {trajectory: 0.1, goal: 0.1}
+    PSM1_outer_pitch: {trajectory: 0.1, goal: 0.1}
+    PSM1_outer_insertion: {trajectory: 0.1, goal: 0.1}
+    PSM1_outer_roll: {trajectory: 0.1, goal: 0.1}
+    PSM1_outer_wrist_pitch: {trajectory: 0.1, goal: 0.1}
+    PSM1_outer_wrist_yaw: {trajectory: 0.1, goal: 0.1}
+  stop_trajectory_duration: 0.5
+  state_publish_rate: 25
+  action_monitor_rate: 10
+psm1_joint_group_position_controller:
+  type: position_controllers/JointGroupPositionController
+  joints:
+    - PSM1_outer_yaw
+    - PSM1_outer_pitch
+    - PSM1_outer_insertion
+  gains: 
+    PSM1_outer_yaw: {p: 100.0, i: 0.0, d: 3.0}
+    PSM1_outer_pitch: {p: 100.0, i: 0.0, d: 3.0}
+    PSM1_outer_insertion: {p: 6000.0, i: 0.0, d: 80.0}
+psm2_arm_controller:
+  type: position_controllers/JointTrajectoryController
+  joints:
+    - PSM2_outer_yaw
+    - PSM2_outer_pitch
+    - PSM2_outer_insertion
+  gains: 
+    PSM2_outer_yaw: {p: 100.0, i: 0.0, d: 3.0}
+    PSM2_outer_pitch: {p: 100.0, i: 0.0, d: 3.0}
+    PSM2_outer_insertion: {p: 6000.0, i: 0.0, d: 80.0}
+  constraints:
+    goal_time: 0.6
+    stopped_velocity_tolerance: 0.05
+    PSM2_outer_yaw: {trajectory: 0.1, goal: 0.1}
+    PSM2_outer_pitch: {trajectory: 0.1, goal: 0.1}
+    PSM2_outer_insertion: {trajectory: 0.1, goal: 0.1}
+    PSM2_outer_roll: {trajectory: 0.1, goal: 0.1}
+    PSM2_outer_wrist_pitch: {trajectory: 0.1, goal: 0.1}
+    PSM2_outer_wrist_yaw: {trajectory: 0.1, goal: 0.1}
+  stop_trajectory_duration: 0.5
+  state_publish_rate: 25
+  action_monitor_rate: 10
+psm2_joint_group_position_controller:
+  type: position_controllers/JointGroupPositionController
+  joints:
+    - PSM2_outer_yaw
+    - PSM2_outer_pitch
+    - PSM2_outer_insertion
+  gains: 
+    PSM2_outer_yaw: {p: 100.0, i: 0.0, d: 3.0}
+    PSM2_outer_pitch: {p: 100.0, i: 0.0, d: 3.0}
+    PSM2_outer_insertion: {p: 6000.0, i: 0.0, d: 80.0}
+ecm_arm_controller:
+  type: position_controllers/JointTrajectoryController
+  joints:
+    - ECM_outer_yaw
+    - ECM_outer_pitch
+    - ECM_insertion
+    - ECM_outer_roll
+  gains: 
+    ECM_outer_yaw: {p: 400.0, i: 0.0, d: 30.0}
+    ECM_outer_pitch: {p: 1000.0, i: 0.0, d: 80.0}
+    ECM_insertion: {p: 10000.0, i: 0.0, d: 12000.0}
+    ECM_outer_roll: {p: 20.0, i: 0.0, d: 0.5}
+  constraints:
+    goal_time: 0.6
+    stopped_velocity_tolerance: 0.05
+    ECM_outer_yaw: {trajectory: 0.1, goal: 0.1}
+    ECM_outer_pitch: {trajectory: 0.1, goal: 0.1}
+    ECM_insertion: {trajectory: 0.1, goal: 0.1}
+    ECM_outer_roll: {trajectory: 0.1, goal: 0.1}
+  stop_trajectory_duration: 0.5
+  state_publish_rate: 25
+  action_monitor_rate: 10
+ecm_joint_group_position_controller:
+  type: position_controllers/JointGroupPositionController
+  joints:
+    - ECM_outer_yaw
+    - ECM_outer_pitch
+    - ECM_insertion
+    - ECM_outer_roll
+  gains: 
+    ECM_outer_yaw: {p: 400.0, i: 0.0, d: 30.0}
+    ECM_outer_pitch: {p: 1000.0, i: 0.0, d: 80.0}
+    ECM_insertion: {p: 10000.0, i: 0.0, d: 12000.0}
+    ECM_outer_roll: {p: 20.0, i: 0.0, d: 0.5}

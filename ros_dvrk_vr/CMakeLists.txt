@@ -12,6 +12,8 @@ find_package(catkin REQUIRED COMPONENTS
   controller_manager
   roslaunch
   trajectory_msgs
+  moveit_servo
+  moveit_msgs
 )
 roslaunch_add_file_check(launch)
 
@@ -26,7 +28,9 @@ generate_messages(
   sensor_msgs
 )
 
-catkin_package()
+catkin_package(
+  CATKIN_DEPENDS moveit_servo moveit_msgs roscpp sensor_msgs std_msgs geometry_msgs message_runtime
+)
 
 catkin_install_python(PROGRAMS
   scripts/server_endpoint.py
@@ -35,10 +39,26 @@ catkin_install_python(PROGRAMS
   DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
 )
 
+
+add_executable(pose_tracking_arms src/pose_tracking_arms.cpp)
+target_link_libraries(pose_tracking_arms 
+${catkin_LIBRARIES}
+${Boost_LIBRARIES})
+add_dependencies(pose_tracking_arms ${catkin_EXPORTED_TARGETS})
+
+add_executable(service_call src/service_call.cpp)
+target_link_libraries(service_call 
+${catkin_LIBRARIES})
+add_dependencies(service_call ${catkin_EXPORTED_TARGETS})
+
 install(DIRECTORY launch DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION}
   PATTERN "setup_assistant.launch" EXCLUDE)
 install(DIRECTORY config DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION})
 
+include_directories(include ${catkin_INCLUDE_DIRS})
+include_directories(SYSTEM
+  ${Boost_INCLUDE_DIR}
+)
 #############
 ## Testing ##
 #############

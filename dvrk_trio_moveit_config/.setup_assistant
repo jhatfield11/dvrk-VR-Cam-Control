@@ -1,0 +1,11 @@
+moveit_setup_assistant_config:
+  URDF:
+    package: dvrk_model
+    relative_path: model/All_arms.urdf
+    xacro_args: ""
+  SRDF:
+    relative_path: config/dvrk_psm.srdf
+  CONFIG:
+    author_name: James Hatfield
+    author_email: jameslhatfield11@gmail.com
+    generated_timestamp: 1619210293

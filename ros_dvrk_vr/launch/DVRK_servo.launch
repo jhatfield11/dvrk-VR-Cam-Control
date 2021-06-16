@@ -1,0 +1,36 @@
+<launch>
+
+  <include file="$(find ros_dvrk_vr)/launch/planning_context.launch">
+    <arg name="load_robot_description" value="true" />
+  </include>
+
+  <node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher" respawn="true" output="screen">
+    <param name="publish_frequency" type="double" value="50.0" />
+  </node>
+
+  <node pkg="rostopic" type="rostopic" name="fake_joint_calibration"
+        args="pub /calibrated std_msgs/Bool true" />
+
+  <rosparam file="$(find ros_dvrk_vr)/config/joint_state_controller.yaml" command="load"/>
+  <node name="joint_state_controller_spawner" pkg="controller_manager" type="controller_manager" args="spawn joint_state_controller" respawn="false" output="screen"/>
+
+   <!-- start these controller -->
+  <rosparam file="$(find ros_dvrk_vr)/config/arm_controllers.yaml" command="load"/>
+  <node name="arm_controller_spawner" pkg="controller_manager" type="controller_manager" args="spawn ecm_arm_controller psm1_joint_group_position_controller psm2_joint_group_position_controller" respawn="false" output="screen"/>
+
+
+  <!-- load other controllers -->
+  <node name="ros_control_controller_manager" pkg="controller_manager" type="controller_manager" respawn="false" output="screen" args="load ecm_joint_group_position_controller psm1_arm_controller psm2_arm_controller" />
+
+  <!-- Launch moveit -->
+  <include file="$(find ros_dvrk_vr)/launch/move_group.launch">
+    <arg name="debug" default="false" />
+    <arg name="load_robot_description" value="false"/>
+  </include>
+
+  <include file="$(find ros_dvrk_vr)/launch/moveit_rviz.launch">
+    <arg name="rviz_config" value="$(find ros_dvrk_vr)/launch/moveit.rviz"/>
+    <arg name="debug" value="false"/>
+  </include>
+
+</launch>
